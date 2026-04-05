@@ -1,0 +1,33 @@
+/* ===========================
+   RESET CSS — Base universelle
+   =========================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;  /* La façon la plus saine de calculer les tailles */
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;         /* Base de référence pour les rem */
+  scroll-behavior: smooth; /* Défilement fluide sur les ancres */
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* Rendu texte plus net sur Mac */
+}
+
+img, video {
+  max-width: 100%;         /* Les images ne débordent jamais de leur conteneur */
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;           /* Les formulaires héritent de la police du site */
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word; /* Évite les débordements de texte */
+}
