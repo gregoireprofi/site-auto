@@ -25,6 +25,7 @@ nav ul li a {
     background-repeat: no-repeat;
     color: white;
     display: flex;              /* Active flexbox */
-    align-items: center;        /* Centre verticalement 👈 */
+    align-items: flex-end;
     padding-left: 40px;         /* Espace à gauche pour ne pas coller au bord */
+    padding-bottom: 40px;
 }
