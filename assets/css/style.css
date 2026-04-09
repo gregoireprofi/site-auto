@@ -19,8 +19,12 @@ nav ul li a {
 .banner {
     width: 100%;
     height: 325px;
-    background-image: url('');
+    background-image: url(../image_bank/d-panyukov-YKF2FrwgGUE-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
+    display: flex;              /* Active flexbox */
+    align-items: center;        /* Centre verticalement 👈 */
+    padding-left: 40px;         /* Espace à gauche pour ne pas coller au bord */
 }
