@@ -27,29 +27,121 @@
                 <h1>MotorLore<br>Tout l'automobile. Rien de moins.</h1>
              </div>
         </header>
-        <main>
-            <div class="presentation">
+      <main>
+
+    <!-- BLOC PRÉSENTATION -->
+    <div class="presentation">
         <section>
-            <h2>Le lieu où la passion rencontre la précision.<span class="deuz"> Animé par ce qui avance.</span></h2>
-        <p>Nec sane haec sola pernicies orientem diversis cladibus adfligebat. Namque et Isauri, quibus est usitatum saepe pacari saepeque inopinis excursibus cuncta miscere, ex latrociniis occultis et raris, alente inpunitate adulescentem in peius audaciam ad bella gravia proruperunt, diu quidem perduelles spiritus inrequietis motibus erigentes, hac tamen indignitate perciti vehementer, ut iactitabant, quod eorum capiti quidam consortes apud Iconium Pisidiae oppidum in amphitheatrali spectaculo feris praedatricibus obiecti sunt praeter morem.
-        </p>
+            <h2>Le lieu où la passion rencontre la précision.
+                <span class="deuz"> Animé par ce qui avance.</span>
+            </h2>
+            <p>Nec sane haec sola pernicies orientem diversis cladibus...</p>
         </section>
-            </div>
-            <section>
-        <h3>Nos derniers articles</h3>
-    </section>
-        <section>
-            <h3>L'actualité F1</h3>
+    </div>
+
+    <!-- GRILLE : ARTICLES + GALERIE CÔTE À CÔTE -->
+    <div class="content-grid">
+
+        <!-- COLONNE GAUCHE (3/4) -->
+        <div class="left-column">
+
+            <!-- NOS DERNIERS ARTICLES -->
+            <section class="derniers-articles">
+                <h3>Nos derniers articles</h3>
+
+                <article class="article-preview">
+                    <img src="assets/image_bank/article1.jpg" alt="Article 1">
+                    <div class="article-texte">
+                        <h4>Titre de l'article 1</h4>
+                        <p>Courte description de l'article pour donner envie de lire la suite...</p>
+                        <a href="#">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="article-preview">
+                    <img src="assets/image_bank/article2.jpg" alt="Article 2">
+                    <div class="article-texte">
+                        <h4>Titre de l'article 2</h4>
+                        <p>Courte description de l'article pour donner envie de lire la suite...</p>
+                        <a href="#">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="article-preview">
+                    <img src="assets/image_bank/article3.jpg" alt="Article 3">
+                    <div class="article-texte">
+                        <h4>Titre de l'article 3</h4>
+                        <p>Courte description de l'article pour donner envie de lire la suite...</p>
+                        <a href="#">Lire la suite →</a>
+                    </div>
+                </article>
+
             </section>
-            <section>
-        <h3>Galerie</h3>
-        </section>
-        <section>
+
+            <!-- L'ACTUALITÉ F1 -->
+            <section class="actu-f1">
+                <h3>L'actualité F1</h3>
+
+                <article class="article-preview">
+                    <img src="assets/image_bank/f1.jpg" alt="Actualité F1">
+                    <div class="article-texte">
+                        <h4>Titre de l'actualité F1</h4>
+                        <p>Courte description de l'actualité F1 pour donner envie de lire la suite...</p>
+                        <a href="#">Lire la suite →</a>
+                    </div>
+                </article>
+
+            </section>
+
+        </div>
+
+        <!-- COLONNE DROITE : GALERIE (1/4) -->
+        <aside class="galerie">
+            <div class="galerie-inner">
+
+                <!-- Titre par dessus la mosaïque -->
+                <h3 class="galerie-titre"><a href="#">Galerie</a></h3>
+
+                <!-- Mosaïque de photos -->
+                <div class="mosaique">
+                    <img src="assets/image_bank/chuttersnap-gts_Eh4g1lk-unsplash.jpg" alt="Photo 1">
+                    <img src="assets/image_bank/joey-banks-zUX6103ig7w-unsplash.jpg" alt="Photo 2">
+                    <img src="assets/image_bank/pexels-george-blatchford-2159158855-35831596.jpg" alt="Photo 3">
+                    <img src="assets/image_bank/redcharlie-mugDbuNnbd0-unsplash.jpg" alt="Photo 4">
+                    <img src="assets/image_bank/erik-mclean-ZRns2R5azu0-unsplash.jpg" alt="Photo 5">
+                    <img src="assets/image_bank/pexels-george-blatchford-2159158855-35849577.jpg" alt="Photo 6">
+                </div>
+
+            </div>
+        </aside>
+
+    </div>
+    <!-- FIN GRILLE -->
+
+    <!-- NOS PARTENAIRES (pleine largeur) -->
+    <section class="partenaires">
         <h3>Nos partenaires</h3>
-        </section>
-        <section>
+        <div class="partenaires-grid">
+            <div class="partenaire-item">Partenaire 1</div>
+            <div class="partenaire-item">Partenaire 2</div>
+            <div class="partenaire-item">Partenaire 3</div>
+            <div class="partenaire-item">Partenaire 4</div>
+            <div class="partenaire-item">Partenaire 5</div>
+        </div>
+    </section>
+
+    <!-- NOS RÉSEAUX (pleine largeur) -->
+    <section class="reseaux">
         <h3>Nos réseaux</h3>
-        </section>
-        </main>
+        <div class="reseaux-grid">
+            <div class="reseau-item">Instagram</div>
+            <div class="reseau-item">TikTok</div>
+            <div class="reseau-item">Facebook</div>
+            <div class="reseau-item">YouTube</div>
+            <div class="reseau-item">Twitter/X</div>
+        </div>
+    </section>
+
+</main>
     </body>
 </html>

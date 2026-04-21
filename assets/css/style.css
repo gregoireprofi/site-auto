@@ -87,3 +87,163 @@ h3 {
   font-display: swap;
   font-style: normal;
 }
+
+/* ==============================
+   GRILLE PRINCIPALE
+   (articles à gauche, galerie à droite)
+============================== */
+.content-grid {
+    display: flex;              /* Côte à côte */
+    width: 100%;
+}
+
+/* Colonne gauche : 3/4 de la largeur */
+.left-column {
+    width: 70%;
+    padding: 40px;
+}
+
+/* Colonne droite : 1/4 de la largeur */
+.galerie {
+    width: 30%;
+    position: relative;         /* Nécessaire pour positionner le titre par dessus */
+    padding-right: 15px;
+}
+
+
+/* ==============================
+   NOS DERNIERS ARTICLES + F1
+   (style commun aux deux sections)
+============================== */
+.derniers-articles,
+.actu-f1 {
+    margin-bottom: 60px;
+}
+
+/* Chaque aperçu d'article */
+.article-preview {
+    display: flex;              /* Image à gauche, texte à droite */
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0; /* Ligne séparatrice entre articles */
+}
+
+.article-preview img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;          /* L'image remplit son cadre sans se déformer */
+    border-radius: 4px;
+}
+
+.article-texte {
+    display: flex;
+    flex-direction: column;     /* Titre, texte et lien empilés verticalement */
+    gap: 10px;
+}
+
+.article-texte a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* ==============================
+   GALERIE
+============================== */
+/* Le wrapper doit avoir une position relative et une hauteur */
+.galerie-inner {
+    position: relative;
+}
+
+/* La mosaïque occupe tout l'espace */
+.mosaique {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 100%;
+}
+
+.mosaique img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Le titre centré par dessus */
+.galerie-titre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 👈 Décale de -50% de SA propre taille pour un centrage parfait */
+    z-index: 2;
+    text-align: center;
+    white-space: nowrap; /* Empêche le texte de se couper sur deux lignes */
+}
+
+.galerie-titre a {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+}
+
+.galerie-titre a:hover {
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
+/* ==============================
+   NOS PARTENAIRES
+============================== */
+/* Pleine largeur pour les deux sections */
+.partenaires,
+.reseaux {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;  /* Le padding ne déborde pas de la page */
+}
+
+/* Les grilles s'étirent sur toute la largeur */
+.partenaires-grid,
+.reseaux-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Les carrés grandissent pour remplir toute la ligne */
+.partenaire-item,
+.reseau-item {
+    flex: 1;                 /* 👈 Chaque carré prend une part égale de la largeur */
+    height: 150px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==============================
+   NOS RÉSEAUX
+============================== */
+.reseaux {
+    padding: 40px;
+}
+
+.reseaux-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.reseau-item {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
